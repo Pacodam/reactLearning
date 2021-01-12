@@ -1,0 +1,46 @@
+.highlight {
+    background-color: yellow;
+    }
+
+    .highlight1 {
+        background-color: yellow;
+        padding-left: 50px;
+        padding-right: 50px;
+        }
+
+        .highlight2 {
+            background-color: yellow;
+            display: inline-block;
+            width: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            }
+
+#container {
+    width: 350px;
+    border: 2px solid black;
+    }
+
+#container2 {
+        width: 150px;
+        border: 2px solid black;
+        }
+    .box1 {
+    background-color: skyblue;
+    }
+    .box2 {
+    background-color: lime;
+    }
+
+    .box3 {
+        background-color: skyblue;
+        width: 20px;
+        height: 30px;
+        }
+        .box4 {
+        background-color: lime;
+        width: 40px;
+        height: 50px;
+        }

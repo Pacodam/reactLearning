@@ -1,0 +1,6 @@
+.ColorBoxContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    border-collapse: collapse;
+  }
+

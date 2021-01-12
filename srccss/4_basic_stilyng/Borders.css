@@ -1,0 +1,91 @@
+#b1{
+    border-style: solid;
+    border-color: green;  
+    border-width: 30px;
+    border-radius: 10px;
+    height: 5rem;
+    width: 5rem;
+}
+
+#b2{
+    border-style: groove;
+    border-color: green; 
+    border-width: 30px; 
+    border-radius: 20px;
+    height: 5rem;
+    width: 5rem;
+}
+
+#b3{
+    border: 6px;
+    border-style: solid;
+    border-color: rgb(25, 70, 25); 
+    border-radius: 30px; 
+    height: 5rem;
+    width: 5rem;
+}
+
+#b4{
+    border: 6px;
+    border-style: outset;
+    border-color: green;  
+    border-radius: 40px;
+    height: 5rem;
+    width: 5rem;
+}
+
+#b5{
+    border: 6px;
+    border-style: ridge;
+    border-color: green;  
+    border-radius: 50px;
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+.b6{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.b7{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+    box-shadow: 5px 5px black;
+}
+.b8{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+    box-shadow: 5px 5px 10px 5px black;
+}
+.b9{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+    box-shadow: 0 0 5px 5px black;
+}
+.b10{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+    box-shadow: 0 0 25px black inset;
+}
+
+.b11{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+   box-shadow: 0 0 10px 0 black, 0 0 25px red inset;
+}
+
+
+
+div{
+    margin: 20px;
+}

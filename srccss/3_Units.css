@@ -1,0 +1,75 @@
+#px1{
+    font-size: 10px;
+}
+
+#px2{
+    font-size: 30px;
+}
+
+#px3{
+     font-size: 70px;
+}
+
+#px4{
+    font-size: 100px;
+}
+
+#em1{
+    color: white;
+   width: 1em;
+   height: 1em;
+   background-color: darkslategrey;
+   padding: 1em;
+    font-size: 20px;
+    margin: 1em;
+}
+
+#em2{
+    color: white;
+    width: 2em;
+    height: 2em;
+    background-color: darkslategrey;
+    font-size: 20px;
+    padding: 2em;
+    margin: 2em;
+ }
+
+ #em1Size1{
+    color: white;
+    width: 2em;
+    height: 2em;
+    background-color: darkslategrey;
+    font-size: 30px;
+    padding: 2em;
+    margin: 2em;
+ }
+
+ #em1Size2{
+    color: white;
+    width: 2em;
+    height: 2em;
+    background-color: darkslategrey;
+    font-size: 40px;
+    padding: 2em;
+    margin: 2em;
+ }
+
+ #em3{
+    color: white;
+    width: 3em;
+    height: 3em;
+    background-color: darkslategrey;
+    font-size: 20px;
+    padding: 3em;
+    margin: 3em;
+ }
+
+ #em4{
+    color: white;
+    width: 4em;
+    height: 4em;
+    background-color: darkslategrey;
+    font-size: 20px;
+    padding: 4em;
+    margin: 4em;
+ }
