@@ -9,7 +9,7 @@ class AlphaButtons extends Component {
   }
 
   handleGuess(evt){
-    console.log(evt.value)
+    console.log("evt", evt);
        this.props.handleGuess(evt.value);
   }
 
