@@ -1,42 +1,40 @@
-import React, {Component} from 'react';
-import './AlphaButtons.css';
+import React, { Component } from "react";
+import "./AlphaButtons.css";
 
 class AlphaButtons extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.generateButtons = this.generateButtons.bind(this);
-    this.handleGuess = this.handleGuess.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleGuess(evt){
-    console.log("evt", evt);
-       this.props.handleGuess(evt.value);
+  //this calls to handleGuess in parent
+  handleClick(evt) {
+    let ltr = evt.target.value;
+    this.props.handleGuess(ltr);
+    //this.setState({guessed : this.props.handle})
   }
 
-   /** generateButtons: return array of letter buttons to render */
-   generateButtons() {
-    return "abcdefghijklmnopqrstuvwxyz".split("").map((ltr, index) => (
+  /** generateButtons: return array of letter buttons to render */
+  generateButtons() {
+    return "abcdefghijklmnopqrstuvwxyz".split("").map((ltr) => (
       <button
-        key={index}
+        key={ltr}
         value={ltr}
-        onClick={this.handleGuess}
-       // disabled={this.state.guessed.has(ltr)}
+        onClick={this.handleClick}
+        disabled={this.props.guessed.has(ltr)}
       >
         {ltr}
       </button>
     ));
   }
 
-    render(){
-      
-        return( 
-          <div>
-           <p className="AlphaButtons">
-           {this.generateButtons()}
-           </p>
-</div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <p className="AlphaButtons">{this.generateButtons()}</p>
+      </div>
+    );
+  }
 }
 
 export default AlphaButtons;

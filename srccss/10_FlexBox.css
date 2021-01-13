@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.item,
+.item2,
+.item3 {
+  background: rebeccapurple;
+  font-size: 3rem;
+  padding: 2rem;
+  color: white;
+}
+
+.item2 {
+  background: skyblue;
+}
+
+.item3 {
+  background: orangered;
+}
+
+.container1 {
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  width: 300px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.one {
+  background: blue;
+}
+.two {
+  background: red;
+}
+.three {
+  background: green;
+}

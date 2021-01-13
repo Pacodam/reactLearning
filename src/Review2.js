@@ -33,6 +33,30 @@ class Review2 extends Component{
         this.setState(this.incrementScore);
         this.setState(this.incrementScore);
     }
+
+    /**
+     * Another example of correct way of updating state
+     * @param {*} curState 
+     */
+    handleGuess(ltr) {
+      this.setState((st) => ({
+        guessed: st.guessed.add(),
+        nWrong: st.nWrong + (st.answer.includes(ltr) ? 0 : 1),
+      }));
+    }
+    //and another one. Look how heads/tails counting was resolved
+   /*  flipCoin() {
+      const newCoin = choice(this.props.coins);
+      this.setState(st => {
+        return {
+          currCoin: newCoin,
+          nFlips: st.nFlips + 1,
+          nHeads: st.nHeads + (newCoin.side === "heads" ? 1 : 0),
+          nTails: st.nTails + (newCoin.side === "tails" ? 1 : 0)
+        };
+      });
+    } */
+
     //curState arguments represents state
     incrementScore(curState) {
         return { score: curState.score + 1 };
@@ -47,6 +71,16 @@ class Review2 extends Component{
 
 
     render(){
+
+      //way of making conditional. If first condition meets, second tool, and the opposite
+         //{this.state.currCoin && <Coin info={this.state.currCoin} />}
+
+        //Array.from concept
+       /*   const boxes = Array.from({ length: this.props.numBoxes }).map(() => (
+          <Box colors={this.props.allColors} />
+          )); */
+
+      
         return(
             <div>
             <h1>Review2</h1>
