@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import Form from './Form';
+import MultipleForm from './MultipleForm';
+import ShoppingList from './ShoppingList';
 import './App.css';
-import Review from './Review';
-import Bootstrap from './Bootstrap';
-import Review2 from './Review2';
-import Review3 from './Review3';
 
 function App() {
   return (
-    <div className="App">
-      <Review3/>
+    <div >
+    <ShoppingList/>
+     <Form />
+     <MultipleForm />
     </div>
   );
 }

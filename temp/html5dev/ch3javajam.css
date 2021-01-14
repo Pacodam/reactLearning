@@ -1,0 +1,27 @@
+body{
+    background-color: #fcebb6;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+header, footer{
+    background-color: #d2b48c;
+    text-align: center;
+    color: #221811;
+}
+
+
+
+header{
+    padding: .5em;
+}
+
+nav{
+    font-weight: bold;
+    font-size: 1.25em;
+    word-spacing: 1em;
+}
