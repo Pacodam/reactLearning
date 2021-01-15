@@ -1,14 +1,10 @@
-import Form from './Form';
-import MultipleForm from './MultipleForm';
-import ShoppingList from './ShoppingList';
 import './App.css';
+import BoxList from './BoxList';
 
 function App() {
   return (
     <div >
-    <ShoppingList/>
-     <Form />
-     <MultipleForm />
+     <BoxList/>
     </div>
   );
 }
