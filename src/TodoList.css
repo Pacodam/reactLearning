@@ -1,0 +1,12 @@
+.TodoList{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-width: 10px;
+    border-style: outset;
+    color: black;
+    background-color: rgb(110, 159, 173);
+    color: lightgray;
+}

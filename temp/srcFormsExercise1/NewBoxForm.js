@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {v4 as uuid} from 'uuid';
 
 class NewBoxForm extends Component {
   static defaultProps = {
@@ -30,23 +31,23 @@ class NewBoxForm extends Component {
   }
 
   handleChange(evt) {
-      this.setState({[evt.target.name] : evt.target.value});
+      this.setState({[evt.target.name] : evt.target.value}); //computed properties!
   }
 
+  /**
+   * The unique id is created on submit!
+   */
   handleSubmit(evt) {
       evt.preventDefault();
-      if(this.state.height == undefined || this.state.width == undefined || this.state.backgroundColor == undefined){
-          alert("Values required!");
-      }
-      else{
-     this.props.addItem(this.state);
+      const newItem = {...this.state, id: uuid()}
+     this.props.addItem(newItem);
       this.setState({height : '', width : '', backgroundColor : ''});
-      }
+      
   }
 
   render() {
     return (
-      <div>
+      
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="height">Height:</label>
           <input
@@ -54,6 +55,7 @@ class NewBoxForm extends Component {
             name="height"
             id="height"
             value={this.state.height}
+            required = {true}
             onChange={this.handleChange}
           />
           <br></br>
@@ -63,6 +65,7 @@ class NewBoxForm extends Component {
             name="width"
             id="width"
             value={this.state.width}
+            required = {true}
             onChange={this.handleChange}
           />
           <br></br>
@@ -72,12 +75,13 @@ class NewBoxForm extends Component {
             name="backgroundColor"
             id="backgroundColor"
             value={this.state.backgroundColor}
+            required = {true}
             onChange={this.handleChange}
           />
           <br></br>
           <button>Add a new box!</button>
         </form>
-      </div>
+      
     );
   }
 }
