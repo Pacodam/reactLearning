@@ -1,0 +1,78 @@
+.div1 {
+  width: 200px;
+  height: 200px;
+  background-color: #d1ecff;
+  border: 3px dashed #000000;
+  padding: 5px;
+}
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 3px ridge #000000;
+  margin: 10px;
+  padding: 5px;
+}
+
+.div3 {
+    width: 200px;
+    height: 200px;
+    background-color: #d1ecff;
+    border: 3px dashed #000000;
+    padding: 5px;
+  }
+  
+  .div4 {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 3px ridge #000000;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  h1 {
+      background-color: #a8c682;
+      padding: 5px;
+      color: #000000;
+  }
+
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #yls {
+      float: right;
+      margin: 0 0 5px 5px;
+      border : 1px solid #000000;
+      width: 25%;
+  }
+
+  #yls2 {
+    float: left;
+    margin-right: 10px;
+    border : 3px ridge #000000;
+    width: 25%;
+}
+
+#h21 {
+    clear : left;
+}
+
+#overflow {
+    background-color: #f3f1bf;
+    overflow: auto;
+    width: 100%;
+}
+
+#overflow-scroll {
+    background-color: #f3f1bf;
+    overflow: auto;
+    width: 300px;
+    height: 100px;
+}
+
+/* .clearleft {
+    clear: left;
+} */
