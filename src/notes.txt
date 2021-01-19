@@ -1,0 +1,12 @@
+
+
+part two: 
+
+constructor bind of toggleLocked method
+
+
+
+
+part eight: add icons
+
+added static props with faces name, then idx used to set a new prop on every dice

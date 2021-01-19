@@ -1,17 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Review from './Review';
-import Bootstrap from './Bootstrap';
-import Review2 from './Review2';
-import Review3 from './Review3';
-import Arrays from './Arrays';
+import React, { Component } from "react";
+import Game from "./Game";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <Arrays />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <Game />
+      </div>
+    );
+  }
 }
 
 export default App;
